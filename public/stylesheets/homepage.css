@@ -1,0 +1,55 @@
+/* This is our stylesheet */
+ body{
+  background: url(/images/image3.jpg);
+  background-size: cover;
+  background-position: center;
+  font-family: 'Lato', sans-serif;
+  color: orange;
+
+}
+
+.bolder{
+  font-weight: bolder;
+}
+/* Making the text appear at center and at the middle of the page */
+#content{
+  text-align: center;
+
+  /* This will bring down the content to the middle of the page
+   Instead of giving a hard number, using percentage will make it more responsive, since
+  it will resize the padding to 25% according to the screen view or
+  avialable screen area */
+
+  padding-top: 25%;
+
+  /* This will set the blur effect */
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
+               0px 8px 13px rgba(0,0,0,0.1),
+               0px 18px 23px rgba(0,0,0,0.1);
+}
+
+/* h1,h3{
+  color: white;
+} */
+
+
+/* Customizing the hr */
+hr{
+  width: 400px;
+  border-top: 1px solid #f8f8f8;
+
+  /* This will give it a shadow effect */
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+/* Setting the font of h1 */
+h1{
+  font-weight: 700;
+  font-size: 5em;
+}
+
+/* Making sure our body covers the whole screen to
+get rid of the image apperating twice */
+html{
+  height: 100%;
+}
