@@ -1,0 +1,52 @@
+body{
+ background-color: black;
+}
+
+.stock{
+  text-align: center;
+  color: red;
+}
+
+.row{
+  margin-left: 0;
+}
+
+.mailSuccess{
+  background-color: green;
+  color:black;
+  text-align: center;
+}
+
+textarea{
+  margin-left: 10px;
+  width: 95% !important;
+}
+
+
+
+form{
+  background-color: blue;
+}
+
+label{
+  color: black;
+  text-align: justify;
+  margin-left: 10px;
+}
+
+.email{
+  /* text-align: justify; */
+  color: red;
+}
+
+form button{
+  width: 95%;
+}
+
+.allign{
+  text-align: center;
+}
+
+.contact{
+  background-color: silver;
+}

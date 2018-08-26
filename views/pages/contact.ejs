@@ -1,0 +1,82 @@
+<% include ../partials/header.ejs %>
+
+<!-- Collect the nav links, forms, and other content for toggling -->
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+  <ul class="nav navbar-nav">
+    <!-- This active class will make the home appear highlighted or active -->
+    <li ><a href="/">Home</a></li>
+    <li><a href="/about">About Me</a></li>
+    <li><a href="/experience">Work Experience</a></li>
+    <li><a href="/protfolio">Protfolio</a></li>
+    <li><a href="/education">Education</a></li>
+
+  </ul>
+  <ul class="nav navbar-nav navbar-right">
+    <li><a href="/resume" target="_blank"><i class="fas fa-file"></i> My Resume </a></li>
+    <li class="active"><a href="/contact"><i class="fas fa-envelope"></i> Contact</a></li>
+  </ul>
+</div><!-- /.navbar-collapse -->
+</div><!-- /.container-fluid -->
+</nav>
+
+  <h1 class="mailSuccess"><%=msg %></h1>
+  <h1 class="stock">Contact Information</h1>
+  <div class="row">
+    <div class="col-md-5 contact">
+
+      <h1 class="stock">Phone</h1>
+      <h3 class="allign"><a href="tel:+17789944429"><i class="fas fa-phone"> +1 (778) 994-4429‬</i></a> </h3>
+      <h3 class="allign"><a href="tel:+17784007801"><i class="fas fa-phone"> +1 (778) 400-7801‬</i></a> </h3>
+    </div>
+
+    <div class="col-md-2">
+      <%# Used for spacing %>
+    </div>
+
+    <div class="col-md-5 contact">
+
+      <h1 class="stock">Email</h1>
+      <h3 class="stock">Most Preferred Method</h3>
+      <h3 class="allign"><a href="mailto:shafi.rpl@gmail.com" target="_top"><i class="far fa-envelope"></i> shafi.rpl@gmail.com</i></a> </h3>
+
+    </div>
+</div>
+
+<br>
+
+<div class="row">
+  <div class="col-md-2">
+
+  </div>
+  <div class="col-md-9">
+    <h1 class="stock">Send Message</h1>
+
+    <form class="" action="/send" method="post">
+      <br>
+      <div class="form-group row">
+        <label for="email">Your Email: </label>
+        <input type="email" name="email" value="" required placeholder="Your Email Address">
+      </div>
+
+      <div class="form-group row">
+        <label for="name">Your Name: </label>
+        <input type="text" name="name" value="" required placeholder="Your Name">
+      </div>
+
+      <div class="form-group row">
+        <label for="company">Your Company: </label>
+        <input type="text" name="company" value="" placeholder="Your Company">
+      </div>
+
+      <div class="form-group row">
+        <textarea name="message" class="form-control" placeholder="Your Message" rows="10"></textarea>
+      </div>
+
+      <div class="form-group row form-button">
+        <button type="submit" name="button" class="btn btn-lg btn-success">Send Message</button>
+      </div>
+  </div>
+  </form>
+</div>
+
+<% include ../partials/footer.ejs %>
