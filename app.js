@@ -1,8 +1,11 @@
 var express               = require("express");
+var secure                = require('express-force-https');
 var app                   = express();
 var bodyParser            = require("body-parser");
 var nodemailer            = require("nodemailer");
 
+
+app.use(secure);
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 app.set("view engine","ejs");
