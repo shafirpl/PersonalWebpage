@@ -1,6 +1,6 @@
 /* This is our stylesheet */
  body{
-  background: url(/images/image3.jpg);
+  background: url('/images/image3.jpg');
   background-size: cover;
   background-position: center;
   font-family: 'Lato', sans-serif;
