@@ -11,6 +11,9 @@ var homepageRoute         = require("./routes/homepage.js");
 var aboutRoute            = require("./routes/about.js");
 var resumeRoute           = require("./routes/resume.js");
 var contactRoute          = require("./routes/contact.js");
+var experienceRoute       = require("./routes/experience.js");
+var protfolioRoute        = require("./routes/protfolio.js");
+
 
 
 app.use(secure);
@@ -24,6 +27,9 @@ app.use(educationRoute);
 app.use(aboutRoute);
 app.use(resumeRoute);
 app.use(contactRoute);
+app.use(experienceRoute);
+app.use(protfolioRoute);
+
 
 
 app.listen(80,function(){
