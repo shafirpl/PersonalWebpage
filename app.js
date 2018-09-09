@@ -13,6 +13,7 @@ var resumeRoute           = require("./routes/resume.js");
 var contactRoute          = require("./routes/contact.js");
 var experienceRoute       = require("./routes/experience.js");
 var protfolioRoute        = require("./routes/protfolio.js");
+var githubRoute        = require("./routes/github.js");
 
 
 
@@ -29,6 +30,7 @@ app.use(resumeRoute);
 app.use(contactRoute);
 app.use(experienceRoute);
 app.use(protfolioRoute);
+app.use(githubRoute);
 
 
 
