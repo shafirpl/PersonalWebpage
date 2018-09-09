@@ -22,7 +22,7 @@ from Udemy web developer course taught by Colt Steele
     <!-- This is our own style sheet, we are adding it after bootstrap so that
     it has highest precedence compared to bootstrap, remember
     in css, the one comes late has more precedence -->
-    <link rel="stylesheet" href="/stylesheets/app.css">
+    <link rel="stylesheet" href="/stylesheets/homepage.css">
 
     <!-- Fontawesome cdn -->
     <link href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" rel="stylesheet">
@@ -67,22 +67,20 @@ from Udemy web developer course taught by Colt Steele
 
 
     <!-- This is for the background image -->
-      <div class="jumbotron">
-        <h1 class="stock">Hello World, This is Shafi!</h1>
-        <h2>Student And Passionate Software Engineer</h2>
-      </div>
-
+    <div class="container">
       <div class="row">
-        <div class="col-md-6">
-          <img src="/images/yelpcamp.jpg" alt="" class="img-responsive">
-          <a href="/about"><button type="button" name="button" class="btn btn-lg btn-primary">About Me</button></a>
-        </div>
+        <div class="col-lg-12">
 
-        <div class="col-md-6">
-          <img src="/images/second.jpg" alt="" class="img-responsive">
-          <a href="/protfolio"><button type="button" name="button" class="btn btn-lg btn-primary">My Protfolio</button></a>
-        </div>
+          <!-- Centering everything with this div -->
+            <div id="content">
+              <h1>Hello World! This Is Shafi</h1>
+              <h3 class="bolder">Student & Passionate Software Engineer</h3>
+              <hr>
+              <a href="/about"><button type="button" name="button" class="btn btn-default btn-lg" href="/about"><i class="fa fa-laptop-code"></i> About Me</button></a>
 
+            </div>
+        </div>
       </div>
+    </div>
 
     <% include ../partials/footer.ejs %>
