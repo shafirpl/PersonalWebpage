@@ -13,7 +13,7 @@ var resumeRoute           = require("./routes/resume.js");
 var contactRoute          = require("./routes/contact.js");
 var experienceRoute       = require("./routes/experience.js");
 var protfolioRoute        = require("./routes/protfolio.js");
-var githubRoute        = require("./routes/github.js");
+var githubRoute           = require("./routes/github.js");
 
 
 
